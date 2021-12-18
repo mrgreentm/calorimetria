@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorimetria</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <table>
+            <tr>
+                <th>Material</th>
+                <th>Calor específico [cal/g°C]</th>
+            </tr>
+            <tr>
+                <td>Água</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Etanol</td>
+                <td>0,59</td>
+            </tr>
+            <tr>
+                <td>Acetona</td>
+                <td>0,52</td>
+            </tr>
+            <tr>
+                <td>Areia</td>
+                <td>0,2</td>
+            </tr>
+            <tr>
+                <td>Ferro</td>
+                <td>0,11</td>
+            </tr>
+        </table>
+        <div class="container-data">
+            <p>Para calcular o calor necessário para se aquecer determinado material em determinadas condições, é necessário utilizar a fórmular <strong>Q=m.c.dT</strong> , utilizando todas as unidades no Sistema Internacional</p>
+        </div>
+        <div class="container-data">
+            <input type="number" placeholder="Digite o calor específico do material" id="calorEspecifico">
+        </div>
+        <div class="container-data">
+            <input type="number" placeholder="Digite a massa do material" id="massa">
+        </div>
+        <div class="container-data">
+            <input type="number" placeholder="Digite a temeperatura inicial do material" id="tempInit">
+        </div>
+        <div class="container-data">
+            <input type="number" placeholder="Digite a temeperatura final do material" id="tempFinal">
+        </div>
+        <div class="container-data">
+            <input type="number" value="" disabled id="result">
+        </div>
+        <div class="container-data">
+            <input type="button" onclick="results()" value="calcular">
+        </div>
+    </div>
+
+</body>
+<script src="./index.js"></script>
+
+</html>

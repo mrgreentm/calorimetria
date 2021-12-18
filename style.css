@@ -1,0 +1,63 @@
+table,
+tr,
+td,
+th {
+    border: 1px solid white;
+}
+
+html {
+    height: 100%;
+}
+
+th {
+    background-color: white;
+    color: black;
+}
+
+table {
+    background-color: black;
+    box-shadow: -2px 7px 46px 17px rgba(0, 0, 0, 0.9);
+    -webkit-box-shadow: -2px 7px 46px 17px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: -2px 7px 46px 17px rgba(0, 0, 0, 0.9);
+}
+
+body {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background: url('./bg.png');
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.container-data {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}
+
+input {
+    width: 100%;
+    color: white;
+    background: black;
+    font-size: 1rem;
+    text-align: center;
+}
+
+::-webkit-input-placeholder {
+    color: rgb(160, 160, 160);
+    font-weight: bold;
+}
